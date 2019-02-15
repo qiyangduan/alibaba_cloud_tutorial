@@ -51,7 +51,7 @@ def percent_encode(encodeStr):
  
 def sign(parameters):
     sortedParameters = sorted(parameters.items(), key=lambda parameters: parameters[0])
-    print(sortedParameters)
+    # print(sortedParameters)
     canonicalizedQueryString = ''
     for (k, v) in sortedParameters:
         canonicalizedQueryString += '&' + percent_encode(k) + '=' + percent_encode(v)
@@ -60,7 +60,7 @@ def sign(parameters):
     bs = bytes(bs, encoding='utf8')
     stringToSign = bytes(stringToSign, encoding='utf8')
     h = hmac.new(bs, stringToSign, sha1)
-    # 进行编码
+    #  
     signature = base64.b64encode(h.digest()).strip()
     return signature
  
@@ -71,7 +71,8 @@ D['InstanceId']="chatbot-cn-0pp0yi58q0001x"
 # D['Utterance']="I want to check my pension balance" 
 D['Utterance']="I want to transfer money to my bank in UK"
 # D['Signature'] = sign(D)
- 
+
+
 
 if __name__ == "__main__": 
     if len (sys.argv) == 1 :
@@ -80,7 +81,7 @@ if __name__ == "__main__":
         chat1 ="I want to transfer money to my bank in UK"
     else: 
         chat1 = sys.argv[1]  
-    print("message:  " , chat1)
+    # print("message:  " , chat1)
     D['Utterance'] = chat1
     D['Signature'] = sign(D)
     sortedParameters = sorted(D.items(), key=lambda D: D[0])
@@ -88,7 +89,7 @@ if __name__ == "__main__":
     # print(sortedParameters)
     
     url = 'https://chatbot.cn-shanghai.aliyuncs.com/?' + urllib.parse.urlencode(sortedParameters)
-    print(url)
+    # print(url)
     r = requests.get(url)
     print(r.text)
     
