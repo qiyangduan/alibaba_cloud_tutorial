@@ -1,11 +1,4 @@
-# Call Chatbot.
-
-I joined Alibaba Cloud starting 2019. Alibaba cloud got great technologies but somehow they are difficult for English spearking developers to just get started. While I am learning lots on this fantastic platform, those are some sample programs. Mostly in Python (3).
-
-Hope they are useful to someone. If you found error, raise an Issue to me. 
-
-
-## Prerequisite
+# Prerequisite
 
 You need to setup your own cridentials and create one chatbot from GUI. As of now(Feb 2019), the alimebot is only available on China Site. This screenshot is taken after chrome translation.
 
