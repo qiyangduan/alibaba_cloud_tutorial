@@ -14,7 +14,7 @@ Basically, your sales website should be:
 
 I am following this [official guide](https://www.alibabacloud.com/help/doc-detail/67394.htm) on PAI platform and created this solution. 
 
-Unfortunately, there is no data to reproduce the steps. So I downloaded from this [link on UCI](https://archive.ics.uci.edu/ml/datasets/Online+Retail#) a similar dataset for easier reproduction. You download the sample by yourself, or get it from this repository at [./data/online_retail.csv](./data/online_retail.csv). 
+Unfortunately, there is no data to reproduce the steps. So I downloaded from this [link on UCI](https://archive.ics.uci.edu/ml/datasets/Online+Retail#) a similar dataset for easier reproduction. You download the sample by yourself, or get it from this repository at [online_retail_200_rows.csv](./data/online_retail_200_rows.csv).  In same folder, there is the larger original one.
 
 
 ## List of cloud product used.
