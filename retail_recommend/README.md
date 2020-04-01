@@ -6,7 +6,7 @@ Given some users and some items, and the history of each customer interacting ea
 
 ## Solution Diagram
 
-![System Architecture](./doc/recommend_arch_20200401102911.jpg)
+![System_Architecture](./doc/recommend_arch_20200401102911.jpg)
 
 Basically, your sales website should be:
 * pushing customer purchase/click logs onto Alibaba cloud OSS
@@ -17,6 +17,10 @@ I am following this [official guide](https://www.alibabacloud.com/help/doc-detai
 Unfortunately, there is no data to reproduce the steps. So I downloaded from this [link on UCI](https://archive.ics.uci.edu/ml/datasets/Online+Retail#) a similar dataset for easier reproduction. You download the sample by yourself, or get it from this repository at [./data/online_retail.csv](./data/online_retail.csv). 
 
 
+## List of cloud product used.
+* [Maxcompute+dataworks] (https://www.alibabacloud.com/product/ide) -- This is an IDE for big data, which works on top of Hadoop (EMR), OSS, Database, etc.
+* [PAI] (https://www.alibabacloud.com/product/machine-learning?spm=a2c63.p38356.1389108.dnavproductai3.6fba3679qCWqJ1) -- This is a collection of AI algorithms, with drag and drop design interface.
+* [OSS] (https://www.alibabacloud.com/product/oss?spm=a3c0i.7911826.1389108.133.9fbf14b3D5kdU4) -- This is a file storage.
 
 ## Prerequisite
 You need to setup your own cridentials for run the samples.
@@ -32,7 +36,12 @@ This solution requests 3 input information:
 
 ## Output Information
 
+This solution produce a table with three columns:
+* User_id
+* Item_id
+* Similar_item_id
 
+The result means for each user_id, you can recommend those products from "similar_item_id".
 
 ## Steps
 ### 1. upload onto OSS
@@ -55,10 +64,10 @@ git clone https://code.aliyun.com/best-practice/140.git
 
 ### 4. Run PAI algorithm.
 Create a project by PAI official tutorial. 
-![recommendation tutorial] (./doc/pai_tutorial_20200401182152.jpg).
+![recommendation_tutorial] (./doc/pai_tutorial_20200401182152.jpg).
 
 The PAI project should look like:
-![System Architecture](./doc/recommend_arch_20200401102911.jpg)
+![System_pai](./doc/pai_20200401181554.jpg)
 
 ### Wrap up all previous step into one business flow and run it every night.
 Create a flow like this:
