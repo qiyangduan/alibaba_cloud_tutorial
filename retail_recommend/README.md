@@ -6,7 +6,7 @@ Given some users and some items, and the history of each customer interacting ea
 
 ## Solution Diagram
 
-![System Architecture](https://octodex.github.com/images/yaktocat.png)
+![System Architecture](https://https://github.com/qiyangduan/alibaba_cloud_tutorial/blob/master/retail_recommend/doc/recommend_arch_20200401102911.jpg)
 
 Basically, your sales website should be pushing customer purchase/click logs onto Alibaba cloud OSS, and then pull the recommendation result from Maxcompute Data Service for rendering result.
 
