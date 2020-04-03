@@ -14,8 +14,8 @@ You should set those two OS Environment Variables before running example:
 
 You can do so by: 
 ```sh
-export ALIME_BOT_ACCESS_ID="LTAIIH1XwvRpAauD"
-export ALIME_BOT_ACCESS_KEY_SECRET="PKS2ZXhWDwXrv1rJnDlbqVd8G9N6Yd"
+export ALIME_BOT_ACCESS_ID="xyz"
+export ALIME_BOT_ACCESS_KEY_SECRET="xyz"
 ```
 
 
@@ -25,5 +25,5 @@ simply run chat.py with message, enclosed by inverted commas. If you get this on
 
 ```sh
 qiyang@duanmac.local[~/Documents/qduan/work/git/alibaba_cloud_tutorial/alimebot_chat_api_example]$ python chat.py "transfer money to bank"
-{"SessionId":"bb7bed8995ad4ba59ffa5f375f5e2b3b","Messages":[{"Text":{"Content":"which country do you want to transfer to?","AnswerSource":"BotFramework"},"Type":"Text","Knowledge":{}}],"MessageId":"cf6c3522f3b54aaea5ec260a915d242e","RequestId":"84310E7E-17F4-4E40-853B-EDE2AB1C08A0"}
+{"SessionId":"xyz","Messages":[{"Text":{"Content":"which country do you want to transfer to?","AnswerSource":"BotFramework"},"Type":"Text","Knowledge":{}}],"MessageId":"xyz","RequestId":"84310E7E-17F4-4E40-853B-EDE2AB1C08A0"}
 ```
