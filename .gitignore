@@ -10,3 +10,5 @@ aligenie/flask/sslapi.py
 terraform_1/terraform.tfstate
 terraform_1/terraform.tfstate.backup
 .DS_Store 
+.vscode/launch.json
+fapiao.py.tar.gz

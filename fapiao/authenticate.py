@@ -19,11 +19,11 @@ url = host + path
       "不含税金额": "377.36",
 
 '''
-bodys['fpdm'] = '''031001900104'''
-bodys['fphm'] = '''96464341'''
+bodys['fpdm'] = '''123123123123'''
+bodys['fphm'] = '''123123'''
 bodys['kprq'] = '''20200601'''
 bodys['noTaxAmount'] = '''484.91'''
-bodys['checkCode'] = '''684720'''
+bodys['checkCode'] = '''123123'''
 post_data = urllib.parse.urlencode(bodys).encode("utf-8")
 request = urllib.request.Request(url, post_data)
 request.add_header('Authorization', 'APPCODE ' + appcode)
